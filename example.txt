@@ -1,3 +1,14 @@
 https://git-scm.com/docs/git-rebase
+===
+   A---B---C topic
+         /
+    D---E---F---G master
 git rebase master
 git rebase master topic
+would be:
+    A'--B'--C' topic
+                 /
+    D---E---F---G master
+---
+git rebase --onto master next topic
+-- 
